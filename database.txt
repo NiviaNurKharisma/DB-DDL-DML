@@ -1,0 +1,14 @@
+menampilkan beberapa record : LIMIT ();
+SELECT * FROM `siswa` LIMIT 5;
+
+Menampilkan jenis kelamin perempuan :
+SELECT * FROM `siswa` WHERE jk='P';
+
+Menampilkan data sesuai Usia Termuda:
+SELECT * FROM `siswa` ORDER BY tanggal_lahir DESC;
+
+Menampilkan alamat yang dirubah menjadi kapital :
+SELECT UPPER(alamat) AS alamat FROM siswa;
+
+Menampilkan data siswa yang  lahir pada tahun 2002 :
+SELECT * FROM `siswa` WHERE YEAR (tanggal_lahir) ='2002';
